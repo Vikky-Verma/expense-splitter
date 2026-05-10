@@ -7,7 +7,7 @@ function ExpenseList() {
   const fetchExpenses = async () => {
     try {
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/expenses/'
+        'https://expense-splitter-maaa.onrender.com/api/expenses/'
       )
 
       setExpenses(response.data)
@@ -23,7 +23,7 @@ function ExpenseList() {
   const deleteExpense = async (id) => {
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/expenses/${id}/`
+        `https://expense-splitter-maaa.onrender.com/api/expenses/${id}/`
       )
 
       fetchExpenses()

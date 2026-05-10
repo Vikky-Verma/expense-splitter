@@ -8,7 +8,7 @@ function AddUser() {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/users/'
+        'https://expense-splitter-maaa.onrender.com/api/users/'
       )
 
       setUsers(response.data)
@@ -28,7 +28,7 @@ function AddUser() {
 
     try {
       await axios.post(
-        'http://127.0.0.1:8000/api/users/',
+        'https://expense-splitter-maaa.onrender.com/api/users/',
         {
           name,
         }
@@ -45,7 +45,7 @@ function AddUser() {
   const deleteUser = async (id) => {
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/users/${id}/`
+        `https://expense-splitter-maaa.onrender.com/api/users/${id}/`
       )
 
       fetchUsers()

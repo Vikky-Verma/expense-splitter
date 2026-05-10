@@ -14,7 +14,7 @@ function ExpenseForm() {
 
   const fetchUsers = async () => {
     const response = await axios.get(
-      'http://127.0.0.1:8000/api/users/'
+      'https://expense-splitter-maaa.onrender.com/api/users/'
     )
 
     setUsers(response.data)
@@ -41,7 +41,7 @@ function ExpenseForm() {
     }
 
     await axios.post(
-      'http://127.0.0.1:8000/api/expenses/',
+      'https://expense-splitter-maaa.onrender.com/api/expenses/',
       expenseData
     )
 

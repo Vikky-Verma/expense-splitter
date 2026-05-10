@@ -9,7 +9,7 @@ function Balances() {
   }, []);
 
   const fetchBalances = async () => {
-    const response = await axios.get("http://127.0.0.1:8000/api/balances/");
+    const response = await axios.get("https://expense-splitter-maaa.onrender.com/api/balances/");
 
     setBalances(response.data);
   };
