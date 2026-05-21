@@ -2,7 +2,7 @@
 
 A full-stack expense splitting web app where a group of users can add shared expenses, track who paid, and see exactly who owes what. Built with **Django REST Framework** + **React (Vite)**.
 
-🌐 **Live Demo:** https://expense-splitter-maaa.onrender.com
+🌐 **Live Demo:** https://expense-splitter-two-omega.vercel.app/
 
 ---
 
